@@ -1,6 +1,7 @@
 var $ = require('jquery/src/core');
 require('jquery/src/selector');
 require('jquery/src/ajax');
+require('jquery/src/ajax/xhr');
 
 module.exports = {
     // 框架级别默认配置参数
