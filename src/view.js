@@ -9,7 +9,7 @@ module.exports = {
             document.querySelector('.g-body').appendChild(tmpDOM);
             tmpDOM.outerHTML = o.tpl;
         }
-        var target = this.getDOM(o.target || o.params.target || null);
+        var target = this.getDOM(o.target || o.conf.target || o.params.target || null);
         if(target){
             o.dom = target;
             o.doms = this.bindDOMs(target, o.doms);
