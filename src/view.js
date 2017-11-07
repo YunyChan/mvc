@@ -1,6 +1,4 @@
-var $ = require('jquery/src/core');
-require('jquery/src/selector');
-require('jquery/src/event');
+var $ = require('jquery');
 
 module.exports = {
     render: function(o){
