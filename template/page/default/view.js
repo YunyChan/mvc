@@ -4,7 +4,7 @@ function View(params) {
 
 
 View.prototype = {
-    target: '.m-MODULE_FOR_REPLACE',
+    target: '.m-MODULE_CLASS',
     doms: {
     },
     events: {
