@@ -3,13 +3,15 @@ var $ = require('jquery');
 module.exports = {
     render: function(o){
         o.beforeRender && o.beforeRender();
+        var target = this.getDOM(o.target || (o.conf && o.conf.target) || (o.params && o.params.target) || null);
         if(o.tpl){
             var tmpDOM = document.createElement('div');
-            tmpDOM.style.display = 'none';
-            document.querySelector('.g-body').appendChild(tmpDOM);
-            tmpDOM.outerHTML = o.tpl;
+            tmpDOM.innerHTML = o.tpl;
+            var parent = target.parentElement;
+            var targetDOM = tmpDOM.firstChild;
+            parent.replaceChild(targetDOM, target);
+            target = targetDOM;
         }
-        var target = this.getDOM(o.target || (o.conf && o.conf.target) || (o.params && o.params.target) || null);
         if(target){
             o.dom = target;
             o.doms = this.bindDOMs(target, o.doms);
