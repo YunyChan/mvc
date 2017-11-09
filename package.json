@@ -1,14 +1,14 @@
 {
-  "name": "mvc",
+  "name": "plugin-mvc",
   "version": "1.0.0",
-  "description": "A simple framework of web frontend",
+  "description": "A simple MVC framework for web frontend",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YunyChan/mvc.git"
+    "url": "git+https://github.com/YunyChan/plugin-mvc.git"
   },
   "keywords": [
     "MVC"
@@ -16,9 +16,9 @@
   "author": "yuny",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/YunyChan/mvc/issues"
+    "url": "https://github.com/YunyChan/plugin-mvc/issues"
   },
-  "homepage": "https://github.com/YunyChan/mvc#readme",
+  "homepage": "https://github.com/YunyChan/plugin-mvc#readme",
   "dependencies": {
     "jquery": "^3.2.1"
   }
